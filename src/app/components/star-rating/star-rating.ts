@@ -10,12 +10,15 @@ import {
   effect,
 } from '@angular/core';
 import { animate } from 'motion';
+import { LucideAngularModule, Star } from 'lucide-angular';
 
 @Component({
   selector: 'app-star-rating',
+  imports: [LucideAngularModule],
   templateUrl: './star-rating.html',
 })
 export class StarRating {
+  protected readonly StarIcon = Star;
   // Inputs
   readonly initialRating = input(0);
 

@@ -9,6 +9,7 @@ import {
   effect,
 } from '@angular/core';
 import { animate } from 'motion';
+import { LucideAngularModule, Check } from 'lucide-angular';
 
 export interface Task {
   id: number;
@@ -18,9 +19,11 @@ export interface Task {
 
 @Component({
   selector: 'app-checkbox-animation',
+  imports: [LucideAngularModule],
   templateUrl: './checkbox-animation.html',
 })
 export class CheckboxAnimation {
+  protected readonly CheckIcon = Check;
   // Inputs
   readonly initialTasks = input<Task[]>([
     { id: 1, text: 'メールを確認する', completed: false },

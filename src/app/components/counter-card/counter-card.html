@@ -11,19 +11,7 @@
       (click)="decrement()"
       class="p-4 bg-red-500 text-white rounded-full hover:bg-red-600 transition-colors"
     >
-      <!-- Minus Icon -->
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="w-6 h-6"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <path d="M5 12h14" />
-      </svg>
+      <lucide-icon [img]="MinusIcon" class="w-6 h-6" />
     </button>
 
     <button
@@ -39,20 +27,7 @@
       (click)="increment()"
       class="p-4 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors"
     >
-      <!-- Plus Icon -->
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="w-6 h-6"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <path d="M5 12h14" />
-        <path d="M12 5v14" />
-      </svg>
+      <lucide-icon [img]="PlusIcon" class="w-6 h-6" />
     </button>
   </div>
 </div>

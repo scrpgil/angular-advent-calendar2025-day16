@@ -18,20 +18,7 @@
           (mousedown)="onRemoveButtonClick($event)"
           class="hover:bg-blue-200 rounded-full p-0.5 transition-colors"
         >
-          <!-- X Icon -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-3 h-3"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M18 6 6 18" />
-            <path d="m6 6 12 12" />
-          </svg>
+          <lucide-icon [img]="XIcon" class="w-3 h-3" />
         </button>
       </div>
     }

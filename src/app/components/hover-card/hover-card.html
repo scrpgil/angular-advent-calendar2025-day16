@@ -9,21 +9,7 @@
 
   <div #content class="relative z-10">
     <div class="w-16 h-16 mb-4 bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl flex items-center justify-center">
-      <!-- ShoppingCart Icon -->
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="w-8 h-8 text-blue-600"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <circle cx="8" cy="21" r="1" />
-        <circle cx="19" cy="21" r="1" />
-        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-      </svg>
+      <lucide-icon [img]="ShoppingCartIcon" class="w-8 h-8 text-blue-600" />
     </div>
 
     <h3 class="mb-2 text-gray-900 font-semibold">プレミアムプラン</h3>
@@ -34,19 +20,7 @@
 
     <div class="flex items-center gap-1 mb-4">
       @for (star of [1, 2, 3, 4, 5]; track star) {
-        <!-- Star Icon -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-4 h-4 fill-yellow-400 text-yellow-400"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-        </svg>
+        <lucide-icon [img]="StarIcon" class="w-4 h-4 fill-yellow-400 text-yellow-400" />
       }
     </div>
 

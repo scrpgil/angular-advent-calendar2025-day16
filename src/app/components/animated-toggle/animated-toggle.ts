@@ -10,12 +10,16 @@ import {
   effect,
 } from '@angular/core';
 import { animate } from 'motion';
+import { LucideAngularModule, Moon, Sun } from 'lucide-angular';
 
 @Component({
   selector: 'app-animated-toggle',
+  imports: [LucideAngularModule],
   templateUrl: './animated-toggle.html',
 })
 export class AnimatedToggle {
+  protected readonly MoonIcon = Moon;
+  protected readonly SunIcon = Sun;
   // Inputs
   readonly initialValue = input(false);
 

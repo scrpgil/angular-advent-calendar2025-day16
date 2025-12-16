@@ -6,12 +6,16 @@ import {
   output,
 } from '@angular/core';
 import { animate } from 'motion';
+import { LucideAngularModule, ShoppingCart, Star } from 'lucide-angular';
 
 @Component({
   selector: 'app-hover-card',
+  imports: [LucideAngularModule],
   templateUrl: './hover-card.html',
 })
 export class HoverCard {
+  protected readonly ShoppingCartIcon = ShoppingCart;
+  protected readonly StarIcon = Star;
   // Outputs
   readonly buttonClick = output<void>();
 

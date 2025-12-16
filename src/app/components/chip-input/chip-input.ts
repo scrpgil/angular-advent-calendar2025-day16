@@ -9,12 +9,15 @@ import {
   effect,
 } from '@angular/core';
 import { animate } from 'motion';
+import { LucideAngularModule, X } from 'lucide-angular';
 
 @Component({
   selector: 'app-chip-input',
+  imports: [LucideAngularModule],
   templateUrl: './chip-input.html',
 })
 export class ChipInput {
+  protected readonly XIcon = X;
   // Inputs
   readonly initialChips = input<string[]>(['React', 'TypeScript', 'Tailwind']);
 

@@ -11,12 +11,16 @@ import {
   effect,
 } from '@angular/core';
 import { animate } from 'motion';
+import { LucideAngularModule, Play, RotateCcw } from 'lucide-angular';
 
 @Component({
   selector: 'app-progress-card',
+  imports: [LucideAngularModule],
   templateUrl: './progress-card.html',
 })
 export class ProgressCard implements OnDestroy {
+  protected readonly PlayIcon = Play;
+  protected readonly RotateCcwIcon = RotateCcw;
   // Inputs
   readonly initialProgress = input(0);
 

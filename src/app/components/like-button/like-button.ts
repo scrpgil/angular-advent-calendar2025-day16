@@ -10,12 +10,16 @@ import {
   effect,
 } from '@angular/core';
 import { animate } from 'motion';
+import { LucideAngularModule, Heart } from 'lucide-angular';
 
 @Component({
   selector: 'app-like-button',
+  imports: [LucideAngularModule],
   templateUrl: './like-button.html',
 })
 export class LikeButton {
+  protected readonly HeartIcon = Heart;
+
   // Inputs
   readonly initialLiked = input(false);
   readonly initialCount = input(42);

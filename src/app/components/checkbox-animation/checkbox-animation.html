@@ -13,19 +13,7 @@
           [class]="getCheckboxClass(task.completed)"
         >
           @if (task.completed) {
-            <!-- Check Icon -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-4 h-4 text-white"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M20 6 9 17l-5-5" />
-            </svg>
+            <lucide-icon [img]="CheckIcon" class="w-4 h-4 text-white" [strokeWidth]="3" />
           }
         </div>
 

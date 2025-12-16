@@ -7,12 +7,16 @@ import {
   output,
 } from '@angular/core';
 import { animate } from 'motion';
+import { LucideAngularModule, Bell } from 'lucide-angular';
 
 @Component({
   selector: 'app-pulse-button',
+  imports: [LucideAngularModule],
   templateUrl: './pulse-button.html',
 })
 export class PulseButton implements OnDestroy {
+  protected readonly BellIcon = Bell;
+
   // Outputs
   readonly clicked = output<void>();
 

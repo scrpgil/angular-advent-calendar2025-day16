@@ -9,12 +9,16 @@ import {
   output,
 } from '@angular/core';
 import { animate } from 'motion';
+import { LucideAngularModule, Minus, Plus } from 'lucide-angular';
 
 @Component({
   selector: 'app-counter-card',
+  imports: [LucideAngularModule],
   templateUrl: './counter-card.html',
 })
 export class CounterCard {
+  protected readonly MinusIcon = Minus;
+  protected readonly PlusIcon = Plus;
   // Inputs
   readonly initialValue = input(0);
 

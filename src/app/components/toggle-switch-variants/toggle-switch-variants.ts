@@ -9,6 +9,7 @@ import {
   effect,
 } from '@angular/core';
 import { animate } from 'motion';
+import { LucideAngularModule, Check, X } from 'lucide-angular';
 
 @Component({
   selector: 'app-minimal-toggle',
@@ -54,6 +55,7 @@ export class MinimalToggle {
 
 @Component({
   selector: 'app-icon-toggle',
+  imports: [LucideAngularModule],
   template: `
     <div class="flex flex-col items-center gap-2">
       <button
@@ -64,14 +66,9 @@ export class MinimalToggle {
       >
         <div #knob class="w-6 h-6 bg-white rounded-full shadow-md flex items-center justify-center">
           @if (isOn()) {
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20 6 9 17l-5-5" />
-            </svg>
+            <lucide-icon [img]="CheckIcon" class="w-4 h-4 text-blue-500" [strokeWidth]="3" />
           } @else {
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-red-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 6 6 18" />
-              <path d="m6 6 12 12" />
-            </svg>
+            <lucide-icon [img]="XIcon" class="w-4 h-4 text-red-400" [strokeWidth]="3" />
           }
         </div>
       </button>
@@ -80,6 +77,8 @@ export class MinimalToggle {
   `,
 })
 export class IconToggle {
+  protected readonly CheckIcon = Check;
+  protected readonly XIcon = X;
   readonly initialValue = input(false);
   readonly toggled = output<boolean>();
 
