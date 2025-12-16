@@ -1,67 +1,47 @@
-# AdventCalendarDay16
+# Angular Advent Calendar 2025 Day 16
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.3.
+Figma Makeとmotion.jsで作るマイクロインタラクションのデモサイトです。
 
-## Development server
+## デモ
 
-To start a local development server, run:
+https://scrpgil.github.io/angular-advent-calendar2025-day16/
 
-```bash
-ng serve
-```
+## 技術スタック
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **フレームワーク**: Angular 21
+- **アニメーション**: [motion.js](https://motion.dev/) (旧Framer Motion)
+- **スタイリング**: Tailwind CSS 4
+- **テスト**: Vitest
 
-## Code scaffolding
+## コンポーネント一覧
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- 良いねボタン / バリエーション
+- トグルボタン / バリエーション
+- 通知ボタン
+- カウンター
+- ローディングスピナー
+- ファイルアップロード
+- チェックボックス
+- ホバーカード
+- スターレーティング
+- チップインプット
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+## 開発
 
 ```bash
-ng build
+# 依存関係のインストール
+npm install
+
+# 開発サーバー起動
+npm start
+
+# ビルド
+npm run build
+
+# テスト
+npm test
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## ライセンス
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-
-  比較
-
-  | アプローチ         | メリット                                 | デメリット                         |
-  |--------------------|------------------------------------------|------------------------------------|
-  | TS側で直接記述     | シンプル、学習コスト低                   | 再利用性が低い、コードが冗長になる |
-  | コンポーネント作成 | カプセル化できる                         | アニメーション対象が限定される     |
-  | ディレクティブ作成 | 任意の要素に適用可能、宣言的、再利用性高 | 初期実装コストがやや高い           |
+MIT
