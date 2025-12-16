@@ -20,6 +20,14 @@
 - `npm run build` - プロダクションビルド
 - `npm test` - テスト実行
 
+## デプロイメント
+
+GitHub Pagesへのデプロイは`.github/workflows/deploy.yml`で自動化されている。
+
+- mainブランチへのpush時に自動デプロイ
+- `angular.json`の`baseHref`設定（production）でパスを調整
+- デプロイ先: `https://scrpgil.github.io/angular-advent-calendar2025-day16/`
+
 ## コード規約
 
 ### Angularコンポーネント
@@ -48,6 +56,11 @@ afterNextRender(() => {
 コンポーネントは`src/app/components/`配下に配置：
 - `component-name/component-name.ts` - コンポーネントクラス
 - `component-name/component-name.html` - テンプレート
+
+### ソースコード表示
+
+デモページでソースコードを表示する際は、コード重複を避けるためGitHub Raw URLから動的に取得する。
+ハードコードされたソースコードをバンドルに含めない設計。
 
 ### Prettier設定
 
