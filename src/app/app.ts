@@ -13,7 +13,6 @@ import { ToggleSwitchVariants } from './components/toggle-switch-variants/toggle
 import { StarRating } from './components/star-rating/star-rating';
 import { ChipInput } from './components/chip-input/chip-input';
 import { CodeTabs } from './components/code-tabs/code-tabs';
-import { SOURCE_CODES } from './source-codes';
 
 @Component({
   selector: 'app-root',
@@ -37,7 +36,6 @@ import { SOURCE_CODES } from './source-codes';
 })
 export class App {
   protected readonly title = signal('angular-advent-calendar2026-day16');
-  protected readonly sourceCodes = SOURCE_CODES;
 
   // Event handlers
   protected onLikeChange(event: { liked: boolean; count: number }) {
