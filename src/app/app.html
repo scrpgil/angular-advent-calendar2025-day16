@@ -10,10 +10,15 @@
   <!-- 概要 -->
   <section class="mb-12">
     <h2 class="text-2xl font-bold text-gray-800 mb-4">概要</h2>
+    <p class="text-gray-700 leading-relaxed mb-4">
+      本記事では、Figma MakeとJavaScriptアニメーションライブラリ「motion.js」を使って
+      マイクロインタラクションを作ってみた記録です。
+    </p>
     <p class="text-gray-700 leading-relaxed">
-      本記事では、Figma MakeとJavaScriptアニメーションライブラリ「motion.js」を組み合わせて、
-      ユーザー体験を向上させるマイクロインタラクションを実装する方法を紹介します。 また、Claude
-      Codeを活用した効率的な開発フローについても解説します。
+      正直なところ、コードのほとんどはClaude Codeに書いてもらいました。
+      私がやったのは「こういうコンポーネントを作って」「Angularに移植して」といった指示を出すことと、
+      動作確認くらいです。AIの力を借りれば、こんなに簡単にアニメーション付きのUIが作れるんだ、
+      という体験記として読んでいただければ幸いです。
     </p>
   </section>
 
@@ -328,13 +333,16 @@ animate(element, &#123; x: 100 &#125;, &#123; type: 'spring', stiffness: 300 &#1
   <section class="mb-12">
     <h2 class="text-2xl font-bold text-gray-800 mb-4">まとめ</h2>
     <p class="text-gray-700 leading-relaxed mb-4">
-      Figma Makeとmotion.jsを組み合わせることで、デザインから実装までシームレスに
-      マイクロインタラクションを構築できます。Claude Codeを活用すれば、
-      アニメーションのロジックも効率的に実装可能です。
+      今回、Figma Make → React出力 → Claude CodeでAngularに移植、という流れで
+      マイクロインタラクションのデモを作ってみました。
+    </p>
+    <p class="text-gray-700 leading-relaxed mb-4">
+      自分で一からアニメーションのコードを書くのは大変ですが、AIに任せることで
+      驚くほど短時間で動くものができあがりました。もちろん、細かい調整や動作確認は
+      人間がやる必要がありますが、それでも開発のハードルがかなり下がった実感があります。
     </p>
     <p class="text-gray-700 leading-relaxed">
-      ぜひ、あなたのプロジェクトでもマイクロインタラクションを取り入れて、
-      ユーザー体験を向上させてみてください。
+      この記事が、AIを活用した開発に興味がある方の参考になれば嬉しいです。
     </p>
   </section>
 
